@@ -35,5 +35,7 @@ int main(void) {
     pthread_join(thread_1, NULL);
     pthread_join(thread_2, NULL);
     pthread_join(thread_3, NULL);
+
+    pthread_barrier_destroy(&my_barrier);
     exit(0);
 }
